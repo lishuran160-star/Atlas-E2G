@@ -29,7 +29,7 @@ python run.py query-analysis --from-saved
 python run.py figures
 ~~~
 
-These commands work offline on a CPU. They write metrics to `output/reproduction/` and `output/query_analysis/`, and figures to `output/figures/`. Result figures are available as 600 dpi PNG, vector PDF and editable SVG; the overview and additional explanations are also editable in [diagrams.pptx](docs/diagrams.pptx).
+These commands work offline on a CPU. They write metrics to `output/reproduction/` and `output/query_analysis/`, and figures to `output/figures/`. Result figures are available as 600 dpi PNG, vector PDF and editable SVG. The method overview is an editable [SVG](docs/overview.svg).
 
 The repository contains the processed training data, labels, overlap matrices, fitted parameters and saved predictions. No files from the authors' computers are needed. After installing dependencies, you can also inspect candidate retrieval offline with `python run.py query --gene MYC --candidates-only`. Scoring a new query additionally requires public references, acquired automatically as described below.
 
@@ -58,7 +58,7 @@ Open `ranked_pairs.csv` for a gene query, or `ranked_genes.csv` and `ranked_prom
 - `data/`: processed benchmarks, peak overlaps, annotations and public-reference accessions.
 - `models/`: fitted full-input, public-input and component-preserving parameters.
 - `reference_results/`: numerical results and predictions used in the paper.
-- `examples/` and `docs/`: a pair-input example, instructions and editable diagrams.
+- `examples/` and `docs/`: a pair-input example, instructions and the method overview.
 
 Use `run.py` for all commands. Data origins and preprocessing are recorded in [SOURCES.json](data/SOURCES.json). Code is MIT licensed; public data retain their original terms. Please cite **Atlas-E2G learns transferable promoter responsiveness from endogenous enhancer perturbations** and the source studies.
 
