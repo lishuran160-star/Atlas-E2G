@@ -1,0 +1,167 @@
+{
+  "cells": [
+    {
+      "cell": "HepG2",
+      "file": "ENCFF714ISB",
+      "experiment": "ENCSR000EJV",
+      "url": "https://www.encodeproject.org/files/ENCFF714ISB/@@download/ENCFF714ISB.bigWig",
+      "file_size": 589287277,
+      "scale": 0.19508781209588083,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth",
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "HeLa-S3",
+      "file": "ENCFF172PKC",
+      "experiment": "ENCSR000EJT",
+      "url": "https://www.encodeproject.org/files/ENCFF172PKC/@@download/ENCFF172PKC.bigWig",
+      "file_size": 593138216,
+      "scale": 0.18197165727615355,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth",
+        "low spot score",
+        "missing footprints"
+      ]
+    },
+    {
+      "cell": "H1",
+      "file": "ENCFF915WAL",
+      "experiment": "ENCSR000EJN",
+      "url": "https://www.encodeproject.org/files/ENCFF915WAL/@@download/ENCFF915WAL.bigWig",
+      "file_size": 597325579,
+      "scale": 0.22071413546800597,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": []
+    },
+    {
+      "cell": "IMR-90",
+      "file": "ENCFF323RPM",
+      "experiment": "ENCSR000EKG",
+      "url": "https://www.encodeproject.org/files/ENCFF323RPM/@@download/ENCFF323RPM.bigWig",
+      "file_size": 724974766,
+      "scale": 0.2026117891073227,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "SK-N-SH",
+      "file": "ENCFF280RMA",
+      "experiment": "ENCSR000ELQ",
+      "url": "https://www.encodeproject.org/files/ENCFF280RMA/@@download/ENCFF280RMA.bigWig",
+      "file_size": 702443055,
+      "scale": 0.1932705096900466,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": []
+    },
+    {
+      "cell": "BJ",
+      "file": "ENCFF768KOM",
+      "experiment": "ENCSR000EME",
+      "url": "https://www.encodeproject.org/files/ENCFF768KOM/@@download/ENCFF768KOM.bigWig",
+      "file_size": 514258139,
+      "scale": 0.26571477949619293,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth"
+      ]
+    },
+    {
+      "cell": "keratinocyte",
+      "file": "ENCFF839EGC",
+      "experiment": "ENCSR000ELH",
+      "url": "https://www.encodeproject.org/files/ENCFF839EGC/@@download/ENCFF839EGC.bigWig",
+      "file_size": 587125562,
+      "scale": 0.18397657051682473,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth",
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "K562",
+      "file": "ENCFF334FEV",
+      "experiment": "ENCSR000EKP",
+      "url": "https://www.encodeproject.org/files/ENCFF334FEV/@@download/ENCFF334FEV.bigWig",
+      "file_size": 773083639,
+      "scale": 0.1330652043223381,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "GM12878",
+      "file": "ENCFF960FMM",
+      "experiment": "ENCSR000EMT",
+      "url": "https://www.encodeproject.org/files/ENCFF960FMM/@@download/ENCFF960FMM.bigWig",
+      "file_size": 581914321,
+      "scale": 0.14133767038583755,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth",
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "HCT116",
+      "file": "ENCFF906MKW",
+      "experiment": "ENCSR000ENM",
+      "url": "https://www.encodeproject.org/files/ENCFF906MKW/@@download/ENCFF906MKW.bigWig",
+      "file_size": 560779808,
+      "scale": 0.12043467909097672,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth",
+        "low spot score"
+      ]
+    },
+    {
+      "cell": "astrocyte",
+      "file": "ENCFF963PFR",
+      "experiment": "ENCSR000EPM",
+      "url": "https://www.encodeproject.org/files/ENCFF963PFR/@@download/ENCFF963PFR.bigWig",
+      "file_size": 698977533,
+      "scale": 0.23109513223171219,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": [
+        "low read depth"
+      ]
+    },
+    {
+      "cell": "WTC11",
+      "file": "ENCFF437ELN",
+      "experiment": "ENCSR779ZGR",
+      "url": "https://www.encodeproject.org/files/ENCFF437ELN/@@download/ENCFF437ELN.bigWig",
+      "file_size": 262112334,
+      "scale": 0.23753364384174347,
+      "assembly": "hg38",
+      "grid_bp": 1000,
+      "quality_warnings": []
+    }
+  ],
+  "contact": {
+    "url": "https://s3.us-central-1.wasabisys.com/aiden-encode-hic-mirror/bifocals_iter2/tissues.hic",
+    "assembly": "hg38",
+    "normalization": "SCALE",
+    "resolution_bp": 5000
+  },
+  "scale_estimation": "95th percentile of positive values at 20000 fixed background regions, excluding known benchmark loci and their 5 kb flanks. No functional outcomes used."
+}

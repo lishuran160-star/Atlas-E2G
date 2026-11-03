@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="660" viewBox="0 0 1300 660"><rect width="1300" height="660" fill="white"/>
+<text x="25" y="41.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">a  Public binding profiles</text>
+<rect x="25" y="67" width="360" height="125" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
+<rect x="460" y="67" width="370" height="125" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
+<rect x="905" y="67" width="370" height="125" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
+<text x="42" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">ChIP-Atlas peaks</text>
+<text x="42" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">7,070 experiments</text>
+<text x="42" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Protein and cell labels</text>
+<text x="478" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Overlap each region</text>
+<text x="478" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Average within targets</text>
+<text x="478" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Normalize composition</text>
+<text x="922" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">1,598 assay targets</text>
+<text x="922" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Enhancer profile</text>
+<text x="922" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Promoter profile</text>
+<text x="393" y="141.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="836" y="141.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="25" y="250.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">b  Learn regional contributions from CRISPR outcomes</text>
+<rect x="25" y="279" width="245" height="67" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
+<text x="41" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#0072B2">Enhancer term</text>
+<rect x="350" y="279" width="245" height="67" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
+<text x="366" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#C45A00">Promoter term</text>
+<rect x="675" y="279" width="210" height="67" fill="#F2F6F9" stroke="#607080" stroke-width="1.4"/>
+<text x="691" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#607080">Context</text>
+<rect x="1000" y="279" width="275" height="67" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
+<text x="1016" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#0072B2">Pair score</text>
+<text x="294" y="322.68" font-family="Arial" font-size="36" font-weight="700" fill="#607080">+</text>
+<text x="620" y="322.68" font-family="Arial" font-size="36" font-weight="700" fill="#607080">+</text>
+<text x="915" y="325.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="25" y="398.52" font-family="Arial" font-size="29" font-weight="700" fill="#C45A00">Promoter term</text>
+<text x="297" y="401.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="365" y="397.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Reporter responsiveness · evaluated without reporter training</text>
+<text x="25" y="472.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">c  Query with public references</text>
+<rect x="25" y="498" width="360" height="91" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
+<rect x="460" y="498" width="370" height="91" fill="#F2F6F9" stroke="#607080" stroke-width="1.4"/>
+<rect x="905" y="498" width="370" height="91" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
+<text x="42" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Gene name or enhancer</text>
+<text x="42" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Cell type optional</text>
+<text x="478" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Public activity and contact</text>
+<text x="478" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Retained promoter term*</text>
+<text x="922" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Candidate ranking</text>
+<text x="922" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Regional contributions</text>
+<text x="393" y="553.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="836" y="553.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
+<text x="25" y="637.64" font-family="Arial" font-size="28" font-weight="400" fill="#607080">* Component-preserving adaptation refits the other terms; default ranking is separate.</text>
+</svg>

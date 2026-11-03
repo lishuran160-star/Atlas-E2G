@@ -1,0 +1,64 @@
+{
+  "series": "GSE118075",
+  "assay": "Conventional CAGE, unperturbed reference cells",
+  "doi": "10.1038/s41588-019-0485-9",
+  "samples": [
+    {
+      "gsm": "GSM3318135",
+      "cell": "MCF-7",
+      "replicate": 1,
+      "total_tags": 12256297.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318135/suppl/GSM3318135_CNhi10878_biologicalRep1-MCF7-CAGE_ACC.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318136",
+      "cell": "MCF-7",
+      "replicate": 2,
+      "total_tags": 11710775.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318136/suppl/GSM3318136_CNhi10878_biologicalRep2-MCF7-CAGE_ATG.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318207",
+      "cell": "GM12878",
+      "replicate": 1,
+      "total_tags": 4267241.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318207/suppl/GSM3318207_CNhi10917_biologicalRep1-GM12878-CAGE_ACC.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318208",
+      "cell": "GM12878",
+      "replicate": 2,
+      "total_tags": 3688608.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318208/suppl/GSM3318208_CNhi10917_biologicalRep2-GM12878-CAGE_ATG.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318231",
+      "cell": "HepG2",
+      "replicate": 1,
+      "total_tags": 12426388.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318231/suppl/GSM3318231_CNhi10919_biologicalRep1-HepG2-CAGE_ACC.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318232",
+      "cell": "HepG2",
+      "replicate": 2,
+      "total_tags": 10394892.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318232/suppl/GSM3318232_CNhi10919_biologicalRep2-HepG2-CAGE_ATG.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318239",
+      "cell": "K562",
+      "replicate": 1,
+      "total_tags": 3982741.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318239/suppl/GSM3318239_CNhi10920_biologicalRep1-K562-CAGE_ACC.ctss.bed.gz"
+    },
+    {
+      "gsm": "GSM3318240",
+      "cell": "K562",
+      "replicate": 2,
+      "total_tags": 11151956.0,
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3318nnn/GSM3318240/suppl/GSM3318240_CNhi10920_biologicalRep2-K562-CAGE_ATG.ctss.bed.gz"
+    }
+  ],
+  "preprocessing": "Strand-matched TSS +/-250 bp; adjacent within-gene windows trimmed at midpoints; unique length-consistent hg38-to-hg19 mapping; CPM per library, replicate mean or equal four-cell mean. Gene support=(libraries with tags+0.5)/(libraries+1). Promoter weights proportional to CPM+0.1. Unmapped genes receive neutral support. No query candidates are removed."
+}

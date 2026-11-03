@@ -1,0 +1,4 @@
+enhancer_chrom,enhancer_start,enhancer_end,promoter_chrom,tss,promoter_start,promoter_end,gene,numTSSEnhGene,distanceToTSS,normalizedDNase_prom,sumNearbyEnhancers,ubiquitousExpressedGene,numCandidateEnhGene,contactFrequency,ABC.Score
+chr1,3774714,3775214,chr1,3857213,3856213,3858214,CEP104,3.0,81668.0,0.928385,2125.955123,1.0,9.0,0.014274,0.042569
+chr1,3774714,3775214,chr1,3796503,3795503,3797504,LRRC47,1.0,20939.0,0.79851,2125.955123,1.0,4.0,0.050723,0.134384
+chr1,3803570,3805848,chr1,3796503,3795503,3797504,LRRC47,1.0,8390.75,0.79851,971.8593325,1.0,1.5,0.1402884999999999,0.033263

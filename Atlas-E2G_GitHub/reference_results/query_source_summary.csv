@@ -1,0 +1,13 @@
+protocol,view,method,n,AP
+chromosome_blocks,gene,Atlas-E2G,9527,0.7205302846551754
+chromosome_blocks,cell,Atlas-E2G,9527,0.7287495594508371
+study_gene_element_disjoint,gene,Atlas-E2G,9527,0.6613719215604577
+study_gene_element_disjoint,cell,Atlas-E2G,9527,0.6547328673887655
+chromosome_blocks,gene,without_identity,9527,0.6380078840912509
+chromosome_blocks,gene,without_profiles,9527,0.6375315632644473
+chromosome_blocks,cell,without_identity,9527,0.6610508269317099
+chromosome_blocks,cell,without_profiles,9527,0.6518582679768157
+study_gene_element_disjoint,gene,without_identity,9527,0.5376760137526033
+study_gene_element_disjoint,gene,without_profiles,9527,0.5336653479941454
+study_gene_element_disjoint,cell,without_identity,9527,0.5637841835218338
+study_gene_element_disjoint,cell,without_profiles,9527,0.5518726348398758

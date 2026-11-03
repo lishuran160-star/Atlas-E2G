@@ -1,0 +1,127 @@
+{
+  "genome": "GRCh38/hg38; zero-based half-open intervals",
+  "entry_point": "Included processed benchmark tables and binary region-by-experiment overlaps. No reporter outcome is used to fit the CRISPR predictor.",
+  "reference": {
+    "source": "https://chip-atlas.org/",
+    "article": "https://doi.org/10.1093/nar/gkag378",
+    "experiments": 7070,
+    "targets": 1598,
+    "manifest": "reference.tsv.gz",
+    "selection": "TFs and others; 500–300000 peaks and valid alignment/duplicate metrics; up to eight represented cell labels per target; union of best alignment and estimated unique-read experiments in each label; benchmark-associated source series excluded where identifiable."
+  },
+  "source_and_fivecell": {
+    "article": "https://doi.org/10.1038/s41586-026-10781-4",
+    "code": "https://github.com/EngreitzLab/ENCODE_rE2G",
+    "ENCODE_features": {
+      "K562": "ENCFF970QAX",
+      "GM12878": "ENCFF260CIO",
+      "WTC11": "ENCFF071ZZU",
+      "HCT116": "ENCFF407YWT",
+      "Jurkat": "ENCFF681NXF"
+    },
+    "mapping": "Gene symbol and any interval overlap; mean raw covariates and mean published Score across matches. Eight native features retained. Missing native coverage is excluded from fitting and receives zero in full-universe evaluation.",
+    "benchmark_files": {
+      "source": "https://raw.githubusercontent.com/EngreitzLab/CRISPR_comparison/v1.0.0/resources/crispr_data/EPCrisprBenchmark_combined_data.training_K562.GRCh38.tsv.gz",
+      "fivecell": "https://raw.githubusercontent.com/EngreitzLab/CRISPR_comparison/v1.0.0/resources/crispr_data/EPCrisprBenchmark_combined_data.heldout_5_cell_types.GRCh38.tsv.gz"
+    }
+  },
+  "astrocyte": {
+    "article": "https://doi.org/10.1038/s41593-025-02154-3",
+    "ENCODE_features": [
+      "ENCFF572TAU",
+      "ENCFF915CPK"
+    ],
+    "DNase": [
+      "ENCSR000EPM",
+      "ENCSR146KFX"
+    ],
+    "note": "Two feature configurations of the same screen, not independent studies."
+  },
+  "reporter": {
+    "article": "https://doi.org/10.64898/2026.06.25.734173",
+    "code": "https://github.com/yj-tan/ExP-MPRA",
+    "measurements": 285,
+    "unique_intervals": 278,
+    "genes": 271,
+    "preprocessing": "Unmodified 500P/78P sequences; unique length-preserving hg19-to-hg38 mapping; sequence and strand checked; clean-TSS and finite-response filters. Seven intervals occur in both libraries.",
+    "response": "The source annotations P_resp field: the authors fitted promoter-responsiveness parameter summarizing sensitivity to enhancer-driven reporter expression; it is used only as an evaluation outcome."
+  },
+  "annotation": {
+    "source": "https://www.gencodegenes.org/human/release_26.html",
+    "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_26/gencode.v26.annotation.gtf.gz",
+    "policy": "Transcript TSS clusters span <=200 bp; representative selected by APPRIS principal rank, basic tag, then transcript length. All clusters retained."
+  },
+  "candidate_index": "1 kb bins with peak midpoints from at least three of the fixed reference experiments, chromosomes 1–22/X/Y; public support, not functionally validated enhancers.",
+  "evaluation": "Retrospective evaluation; external cohorts informed model selection. The four-gene screen is a candidate-search analysis, not an independent test.",
+  "data_rights": "Derived numerical benchmarks and public annotations retain their source terms. The repository code license does not relicense third-party data.",
+  "distance_strata": "Use benchmark_distance (the original benchmark distance), not the matched feature-file distance or an interval-midpoint approximation.",
+  "public_atlas_inference": {
+    "cell_manifest": "data/public_atlas.json",
+    "dnase": "ENCODE accessions in public_atlas.json; measured hg38 accessibility integrated into 1 kb windows.",
+    "gene_class_url": "https://raw.githubusercontent.com/EngreitzLab/ENCODE_rE2G/v1.0.0/resources/external_features/gene_promoter_class_RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.TSS500bp.tsv",
+    "refseq_url": "https://raw.githubusercontent.com/EngreitzLab/ENCODE_rE2G/v1.0.0/reference/RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.TSS500bp.bed",
+    "public_contact": "https://s3.us-central-1.wasabisys.com/aiden-encode-hic-mirror/bifocals_iter2/tissues.hic",
+    "contact_normalization": "SCALE at 5 kb; not substituted into native rE2G covariates",
+    "training": "Separate gene-only and cell-reference logistic fits on source CRISPR labels; matching public DNase is used when available."
+  },
+  "processed_analysis_inputs": {
+    "public_features.npz": "Row-aligned public annotation/contact features, five measured activity features, availability masks and fixed-K562 activity for source/fivecell/astrocyte; no private query assays.",
+    "public_scores.npz": "Saved predictions used as numerical expectations, not substitutes for fresh fits; output keys identify each analysis.",
+    "activity_columns": [
+      "log1p_enhancer_accessibility",
+      "log1p_promoter_accessibility",
+      "log_normalized_activity_contact",
+      "log1p_nearby_accessibility",
+      "log1p_contact_weighted_activity_background"
+    ],
+    "candidate_screen.csv.gz": "Four-gene CREST-seq candidate windows, screen annotations and scores for seven methods evaluated on identical eligible windows.",
+    "candidate_retrieval.csv.gz": "Pair-level candidate retrieval results for the processed CRISPR benchmarks."
+  },
+  "annotated_candidates": {
+    "annotations": "https://rest.ensembl.org/documentation/info/lookup",
+    "chromosome_sizes": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chrom.sizes",
+    "transcript_policy": "MANE Select, then Ensembl canonical; coordinates use zero-based half-open intervals.",
+    "mask_policy": "Target-gene CDS across annotated translated transcripts, selected-transcript 5-prime UTR and selected TSS +/-1 kb; retain other-gene promoters",
+    "screen": "https://doi.org/10.1038/s41467-026-70933-y"
+  },
+  "enhancer_target_query": {
+    "candidate_annotation": "Included GENCODE genes and TSS clusters; all gene types; same chromosome within 1 Mb of enhancer midpoint; no expression or screened-gene filter and no cap; valid promoter windows only.",
+    "gene_pooling": "CAGE-usage-weighted mean candidate-promoter score per Ensembl gene, multiplied by public transcription detection support. Promoter weights are proportional to CAGE CPM + 0.1 within each gene. All candidate genes are retained; stable identifiers break ties.",
+    "raw_score_comparator": "Maximum candidate-promoter score is retained as raw_max_pair_score and evaluated separately by target-benchmark without CAGE support.",
+    "primary_analysis": "query-analysis; reference_results/query_source_summary.csv, query_pair_summary.csv and query_summary.csv reproduce the matched source, screened-pair and transcription-supported target-query analyses.",
+    "frozen_predictions": "reference_results/target_promoter_scores.csv.gz; all promoter inputs and scores from the supplied public model.",
+    "benchmark": "Existing coordinate-valid five-cell CRISPR data; 174 positive-bearing enhancer/cell/study queries; primary target-choice subset: 60 with at least two assayed genes. Deployed Atlas-E2G coefficients remain fixed; matched binding ablations are refitted only on source CRISPR labels.",
+    "comparators": {
+      "K562": {
+        "accession": "ENCFF970QAX",
+        "url": "https://www.encodeproject.org/files/ENCFF970QAX/@@download/ENCFF970QAX.bed.gz"
+      },
+      "GM12878": {
+        "accession": "ENCFF260CIO",
+        "url": "https://www.encodeproject.org/files/ENCFF260CIO/@@download/ENCFF260CIO.bed.gz"
+      },
+      "WTC11": {
+        "accession": "ENCFF071ZZU",
+        "url": "https://www.encodeproject.org/files/ENCFF071ZZU/@@download/ENCFF071ZZU.bed.gz"
+      },
+      "HCT116": {
+        "accession": "ENCFF407YWT",
+        "url": "https://www.encodeproject.org/files/ENCFF407YWT/@@download/ENCFF407YWT.bed.gz"
+      },
+      "Jurkat": {
+        "accession": "ENCFF681NXF",
+        "url": "https://www.encodeproject.org/files/ENCFF681NXF/@@download/ENCFF681NXF.bed.gz"
+      }
+    },
+    "comparator_processing": "Any enhancer interval overlap; strip Ensembl gene version; mean ABC.Score.Feature and Score within each query and gene; restrict all methods to the same annotation/published intersection for comparison. No missing scores are invented.",
+    "outcomes": "All known-positive target ranks, query-level Top-1/Top-3 hits, positive-target recall and coverage. Missing candidates count as missed; unassayed genes remain unknown. Distal positive outcomes retain proximal competitors.",
+    "intervals": "2000 paired enhancer-coordinate cluster bootstrap draws: seed 20261102 for the principal transcription-supported query-analysis and seed 84627 for the separate raw maximum-score target-benchmark comparator; retrospective uncertainty."
+  },
+  "public_transcription": {
+    "series": "GSE118075",
+    "doi": "10.1038/s41588-019-0485-9",
+    "reference": "transcription.json",
+    "processed_counts": "transcription.npz",
+    "use": "Promoter-usage weights and detection support; no functional labels."
+  }
+}

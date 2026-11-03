@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: >-
+  If you use Atlas-E2G, please cite the accompanying manuscript
+  Atlas-E2G learns transferable promoter responsiveness from endogenous
+  enhancer perturbations by Shuran Li, Zhaonan Zou and Shinya Oki.
+title: Atlas-E2G
+type: software
+repository-code: https://github.com/lishuran160-star/Atlas-E2G
+url: https://github.com/lishuran160-star/Atlas-E2G
+authors:
+  - family-names: Li
+    given-names: Shuran
+    affiliation: Institute of Resource Development and Analysis, Kumamoto University
+  - family-names: Zou
+    given-names: Zhaonan
+    affiliation: Institute of Resource Development and Analysis, Kumamoto University
+  - family-names: Oki
+    given-names: Shinya
+    affiliation: Institute of Resource Development and Analysis, Kumamoto University
+abstract: >-
+  Atlas-E2G learns separate enhancer and promoter contributions from public
+  ChIP-Atlas binding profiles and endogenous CRISPR perturbations. It ranks
+  enhancer-gene candidates and estimates promoter responsiveness. A separately
+  fitted public-reference configuration supports gene-name queries without
+  query-cell assays. The package includes processed data, model parameters
+  and code to reproduce the main manuscript results.
+keywords:
+  - enhancer-gene prediction
+  - promoter responsiveness
+  - ChIP-Atlas
+  - CRISPR perturbation
+license: MIT
