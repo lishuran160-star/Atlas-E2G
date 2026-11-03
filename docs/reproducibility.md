@@ -73,7 +73,7 @@ Each resample draws source genes with replacement and retains all their pairs. T
 
 | Figure | Contents | Source |
 | --- | --- | --- |
-| 1 | Binding profiles, regional contributions and public-input queries | Editable `docs/overview.svg` and `docs/diagrams.pptx` |
+| 1 | Binding profiles, regional contributions and public-input queries | Editable `docs/overview.svg` |
 | 2 | Five-cell precision–recall curves, top-100 positives, reporter measurements and role/identity controls | `full_scores.npz`, `figure_intervals.csv` and processed outcomes |
 | 3 | Public-input AP and component-preserving reporter transfer | `public_scores.npz`, `public_metrics.json` and processed outcomes |
 
