@@ -2,11 +2,11 @@
 
 **Find candidate enhancers from a gene name, or candidate target genes from an enhancer coordinate.**
 
-Atlas-E2G learns enhancer–gene relationships from CRISPR perturbation screens and protein-binding profiles built from ChIP-Atlas peaks. It assigns different contributions to enhancers and promoters. The pair score ranks functional links; the promoter contribution can be compared with responsiveness measured in reporter experiments.
+Atlas-E2G learns enhancer–gene relationships from CRISPR perturbation screens and profiles of assay targets built from ChIP-Atlas peaks. It assigns different contributions to enhancers and promoters. The pair score ranks functional links; the promoter contribution can be compared with responsiveness measured in reporter experiments.
 
 For new queries, genome annotations, binding profiles and contact references are assembled automatically. An optional cell name selects measured public DNase accessibility. You do not need your own sequencing data or an experimental feature table.
 
-![Atlas-E2G inputs, model and evaluation](docs/overview.svg)
+![Atlas-E2G: ChIP peak features, CRISPR training, reporter evaluation and a gene-only MYC query](docs/overview.svg)
 
 The paper evaluates three connected uses:
 
@@ -64,4 +64,4 @@ Use `run.py` for all commands. Data origins and preprocessing are recorded in [S
 
 ## 中文速览
 
-本项目从 ChIP-Atlas 蛋白结合谱和 CRISPR 功能标签学习增强子与启动子的不同贡献。安装依赖后，提供基因名即可检索候选增强子；提供增强子坐标即可检索附近全部注释靶基因；细胞名可选，无需自备测序数据。首次查询自动下载缺失的公共峰文件（完整参考约 6.3 GB），按需获取接触和可及性数据，后续复用缓存。默认配对排序、保留的启动子分量及公共转录支持分别输出。默认窗口为基因查询 500 kb、增强子查询 1 Mb，可扩大至 5 Mb；窗口外联系不会因存在三维接触而自动进入候选。完整使用说明见 [usage.md](docs/usage.md)。
+本项目从 ChIP-Atlas 实验靶标的相对结合谱和 CRISPR 功能标签学习增强子与启动子的不同贡献。安装依赖后，提供基因名即可检索候选增强子；提供增强子坐标即可检索附近全部注释靶基因；细胞名可选，无需自备测序数据。首次查询自动下载缺失的公共峰文件（完整参考约 6.3 GB），按需获取接触和可及性数据，后续复用缓存。默认配对排序、保留的启动子分量及公共转录支持分别输出。默认窗口为基因查询 500 kb、增强子查询 1 Mb，可扩大至 5 Mb；窗口外联系不会因存在三维接触而自动进入候选。完整使用说明见 [usage.md](docs/usage.md)。
