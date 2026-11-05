@@ -73,9 +73,11 @@ Each resample draws source genes with replacement and retains all their pairs. T
 
 | Figure | Contents | Source |
 | --- | --- | --- |
-| 1 | Binding profiles, regional contributions and public-input queries | Editable `docs/overview.svg` |
+| 1 | Peak-to-profile construction, CRISPR training, reporter evaluation and a MYC query | Editable `docs/overview.svg`; MYC output from `python run.py query --gene MYC` |
 | 2 | Five-cell precision–recall curves, top-100 positives, reporter measurements and role/identity controls | `full_scores.npz`, `figure_intervals.csv` and processed outcomes |
 | 3 | Public-input AP and component-preserving reporter transfer | `public_scores.npz`, `public_metrics.json` and processed outcomes |
+
+Figure 1a uses schematic peak intervals to show binary overlap, target-wise pooling and normalization. The expression bars in panel b are also schematic: CRISPR-tested functional links supply fitting labels, whereas reporter measurements evaluate the promoter term and never enter training. Panel c shows the first three rows of the default gene-only MYC query, with no cell type supplied. The displayed pairs share promoter `ENSG00000136997:P3` (hg38 chr8 TSS 127736593); their candidate intervals and scores are read directly from `ranked_pairs.csv`. They are ranked genomic candidates, not experimentally confirmed enhancers. An exact available cell match adds measured public DNase; otherwise the gene-only model is used. Default pair ranking and the retained source promoter contribution remain separate outputs.
 
 The plotting command writes the values behind each panel, including the precision–recall curves. `figure3_values.csv` also preserves within-gene Top-3 counts and label-based ceilings discussed in the text.
 

@@ -1,45 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="660" viewBox="0 0 1300 660"><rect width="1300" height="660" fill="white"/>
-<text x="25" y="41.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">a  Public binding profiles</text>
-<rect x="25" y="67" width="360" height="125" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
-<rect x="460" y="67" width="370" height="125" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
-<rect x="905" y="67" width="370" height="125" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
-<text x="42" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">ChIP-Atlas peaks</text>
-<text x="42" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">7,070 experiments</text>
-<text x="42" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Protein and cell labels</text>
-<text x="478" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Overlap each region</text>
-<text x="478" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Average within targets</text>
-<text x="478" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Normalize composition</text>
-<text x="922" y="105.64" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">1,598 assay targets</text>
-<text x="922" y="139.24" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Enhancer profile</text>
-<text x="922" y="172.84" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Promoter profile</text>
-<text x="393" y="141.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="836" y="141.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="25" y="250.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">b  Learn regional contributions from CRISPR outcomes</text>
-<rect x="25" y="279" width="245" height="67" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
-<text x="41" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#0072B2">Enhancer term</text>
-<rect x="350" y="279" width="245" height="67" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
-<text x="366" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#C45A00">Promoter term</text>
-<rect x="675" y="279" width="210" height="67" fill="#F2F6F9" stroke="#607080" stroke-width="1.4"/>
-<text x="691" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#607080">Context</text>
-<rect x="1000" y="279" width="275" height="67" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
-<text x="1016" y="321.52" font-family="Arial" font-size="29" font-weight="700" fill="#0072B2">Pair score</text>
-<text x="294" y="322.68" font-family="Arial" font-size="36" font-weight="700" fill="#607080">+</text>
-<text x="620" y="322.68" font-family="Arial" font-size="36" font-weight="700" fill="#607080">+</text>
-<text x="915" y="325.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="25" y="398.52" font-family="Arial" font-size="29" font-weight="700" fill="#C45A00">Promoter term</text>
-<text x="297" y="401.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="365" y="397.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Reporter responsiveness · evaluated without reporter training</text>
-<text x="25" y="472.04" font-family="Arial" font-size="33" font-weight="700" fill="#252D35">c  Query with public references</text>
-<rect x="25" y="498" width="360" height="91" fill="#F2F6F9" stroke="#0072B2" stroke-width="1.4"/>
-<rect x="460" y="498" width="370" height="91" fill="#F2F6F9" stroke="#607080" stroke-width="1.4"/>
-<rect x="905" y="498" width="370" height="91" fill="#FFF7F1" stroke="#C45A00" stroke-width="1.4"/>
-<text x="42" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Gene name or enhancer</text>
-<text x="42" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#0072B2">Cell type optional</text>
-<text x="478" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Public activity and contact</text>
-<text x="478" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#252D35">Retained promoter term*</text>
-<text x="922" y="537.64" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Candidate ranking</text>
-<text x="922" y="571.24" font-family="Arial" font-size="28" font-weight="400" fill="#C45A00">Regional contributions</text>
-<text x="393" y="553.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="836" y="553.32" font-family="Arial" font-size="39" font-weight="700" fill="#607080">→</text>
-<text x="25" y="637.64" font-family="Arial" font-size="28" font-weight="400" fill="#607080">* Component-preserving adaptation refits the other terms; default ranking is separate.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="800" viewBox="0 0 1300 800" role="img" aria-labelledby="title desc">
+<title id="title">Atlas-E2G training, evaluation and gene-name query</title>
+<desc id="desc">Public ChIP peak intervals and metadata become enhancer and promoter profiles. CRISPR functional-link labels fit an additive model. Reporter responses evaluate the promoter term only. The MYC gene-only query returns actual candidate-pair rankings; optional matched-cell DNase augments public references.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#65727D"/></marker></defs>
+<rect width="1300" height="800" fill="white"/>
+<text x="25" y="34" font-family="Arial" font-size="32" font-weight="700" text-anchor="start" fill="#1E2933">a  From ChIP-Atlas peaks to regional binding profiles</text>
+<text x="360" y="78" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#0072B2">Enhancer E</text>
+<text x="580" y="78" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#B65200">Promoter P</text>
+<rect x="330" y="88" width="60" height="119" rx="0" fill="#E6F2F9" stroke="#0072B2" stroke-width="1.5"/>
+<rect x="550" y="88" width="60" height="119" rx="0" fill="#FFF0E2" stroke="#B65200" stroke-width="1.5"/>
+<text x="25" y="121" font-family="Arial" font-size="28" font-weight="400" text-anchor="start" fill="#1E2933">CTCF / cell A</text>
+<path d="M245 112L635 112" stroke="#AAB5BD" stroke-width="2" fill="none"/>
+<rect x="295" y="105" width="70" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<rect x="538" y="105" width="64" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<text x="25" y="157" font-family="Arial" font-size="28" font-weight="400" text-anchor="start" fill="#1E2933">CTCF / cell B</text>
+<path d="M245 148L635 148" stroke="#AAB5BD" stroke-width="2" fill="none"/>
+<rect x="425" y="141" width="45" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<rect x="520" y="141" width="74" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<text x="25" y="193" font-family="Arial" font-size="28" font-weight="400" text-anchor="start" fill="#1E2933">EP300 / cell A</text>
+<path d="M245 184L635 184" stroke="#AAB5BD" stroke-width="2" fill="none"/>
+<rect x="348" y="177" width="54" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<rect x="470" y="177" width="25" height="14" rx="0" fill="#65727D" stroke="#65727D" stroke-width="1.5"/>
+<text x="700" y="109" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Overlap</text>
+<text x="700" y="145" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">0 / 1</text>
+<path d="M650 173L810 173" stroke="#65727D" stroke-width="2.6" fill="none" marker-end="url(#arrow)"/>
+<text x="732" y="211" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Pool + normalize</text>
+<text x="1060" y="78" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">Binding profiles</text>
+<text x="981" y="115" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">CTCF</text>
+<text x="1106" y="115" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">EP300</text>
+<text x="1223" y="115" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">…</text>
+<text x="894" y="163" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#0072B2">E</text>
+<rect x="935" y="132" width="92" height="40" rx="0" fill="#9BCCEA" stroke="#CAD2D9" stroke-width="1.5"/>
+<rect x="1060" y="132" width="92" height="40" rx="0" fill="#0072B2" stroke="#CAD2D9" stroke-width="1.5"/>
+<rect x="1185" y="132" width="76" height="40" rx="0" fill="#E6EBEF" stroke="#CAD2D9" stroke-width="1.5"/>
+<text x="894" y="216" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#B65200">P</text>
+<rect x="935" y="185" width="92" height="40" rx="0" fill="#B65200" stroke="#CAD2D9" stroke-width="1.5"/>
+<rect x="1060" y="185" width="92" height="40" rx="0" fill="#FFFFFF" stroke="#CAD2D9" stroke-width="1.5"/>
+<rect x="1185" y="185" width="76" height="40" rx="0" fill="#E6EBEF" stroke="#CAD2D9" stroke-width="1.5"/>
+<text x="25" y="249" font-family="Arial" font-size="28" font-weight="400" text-anchor="start" fill="#65727D">7,070 experiments · illustrative peak tracks</text>
+<text x="1274" y="249" font-family="Arial" font-size="28" font-weight="400" text-anchor="end" fill="#65727D">1,598 ChIP targets</text>
+<path d="M25 261L1275 261" stroke="#E1E6EA" stroke-width="1" fill="none"/>
+<text x="25" y="300" font-family="Arial" font-size="32" font-weight="700" text-anchor="start" fill="#1E2933">b  Learn enhancer and promoter contributions from CRISPR</text>
+<rect x="25" y="319" width="350" height="209" rx="8" fill="#F8FAFB" stroke="#CAD2D9" stroke-width="1.5"/>
+<text x="200" y="354" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">Perturb enhancer E</text>
+<text x="200" y="390" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#65727D">Gene RNA</text>
+<path d="M88 449L335 449" stroke="#65727D" stroke-width="2" fill="none"/>
+<rect x="110" y="400" width="41" height="49" rx="0" fill="#CCD5DC" stroke="#CCD5DC" stroke-width="1.5"/>
+<rect x="270" y="426" width="41" height="23" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="1.5"/>
+<text x="130" y="478" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Control</text>
+<text x="290" y="478" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">CRISPR</text>
+<text x="200" y="510" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Tested link: 1 / 0</text>
+<path d="M392 402L441 402" stroke="#65727D" stroke-width="2.8" fill="none" marker-end="url(#arrow)"/>
+<path d="M450 325L450 468" stroke="#65727D" stroke-width="2" fill="none"/>
+<path d="M450 325L475 325" stroke="#65727D" stroke-width="2" fill="none"/>
+<path d="M450 468L475 468" stroke="#65727D" stroke-width="2" fill="none"/>
+<rect x="485" y="325" width="350" height="43" rx="5" fill="#EAF4FA" stroke="#0072B2" stroke-width="1.5"/>
+<text x="660" y="356" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#0072B2">Enhancer term</text>
+<rect x="485" y="375" width="350" height="43" rx="5" fill="#FFF2E7" stroke="#B65200" stroke-width="1.5"/>
+<text x="660" y="406" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#B65200">Promoter term</text>
+<rect x="485" y="425" width="350" height="43" rx="5" fill="#F2F5F7" stroke="#1E2933" stroke-width="1.5"/>
+<text x="660" y="456" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Activity, contact, context</text>
+<text x="466" y="404" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#65727D">+</text>
+<text x="466" y="454" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#65727D">+</text>
+<path d="M660 469L660 487" stroke="#65727D" stroke-width="2.2" fill="none" marker-end="url(#arrow)"/>
+<text x="660" y="519" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#0072B2">Logistic pair score</text>
+<path d="M839 397L904 397" stroke="#65727D" stroke-width="2.4" fill="none" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="1097" y="342" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">Reporter assay</text>
+<rect x="920" y="359" width="355" height="91" rx="6" fill="#FFF9F4" stroke="#B65200" stroke-width="1.5"/>
+<text x="1097" y="392" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#B65200">Measured promoter</text>
+<text x="1097" y="429" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#B65200">responsiveness</text>
+<text x="1097" y="490" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">Evaluation only</text>
+<path d="M25 535L1275 535" stroke="#E1E6EA" stroke-width="1" fill="none"/>
+<text x="25" y="573" font-family="Arial" font-size="32" font-weight="700" text-anchor="start" fill="#1E2933">c  Query a gene and receive ranked candidates</text>
+<rect x="25" y="608" width="240" height="142" rx="8" fill="#EAF4FA" stroke="#0072B2" stroke-width="1.5"/>
+<text x="145" y="653" font-family="Arial" font-size="38" font-weight="700" text-anchor="middle" fill="#0072B2">MYC</text>
+<text x="145" y="694" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Gene name</text>
+<text x="145" y="732" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#65727D">Cell type optional</text>
+<path d="M277 679L323 679" stroke="#65727D" stroke-width="2.8" fill="none" marker-end="url(#arrow)"/>
+<rect x="337" y="608" width="350" height="142" rx="8" fill="#F8FAFB" stroke="#CAD2D9" stroke-width="1.5"/>
+<text x="512" y="645" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">Retrieve and score</text>
+<text x="512" y="684" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Peaks, annotation, Hi-C</text>
+<text x="512" y="725" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">DNase if cell matched</text>
+<path d="M695 679L728 679" stroke="#65727D" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="1005" y="606" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#1E2933">MYC · gene-only example</text>
+<rect x="739" y="619" width="536" height="37" rx="0" fill="#EAF4FA" stroke="#EAF4FA" stroke-width="1.5"/>
+<text x="765" y="647" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Rank</text>
+<text x="990" y="647" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">chr8 interval (hg38)</text>
+<text x="1236" y="647" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">Score</text>
+<text x="765" y="688" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">1</text>
+<text x="990" y="688" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">127738000–127739000</text>
+<text x="1236" y="688" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">0.731</text>
+<path d="M739 696L1275 696" stroke="#E4E9ED" stroke-width="1" fill="none"/>
+<text x="765" y="721" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">2</text>
+<text x="990" y="721" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">127741000–127742000</text>
+<text x="1236" y="721" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">0.685</text>
+<path d="M739 729L1275 729" stroke="#E4E9ED" stroke-width="1" fill="none"/>
+<text x="765" y="754" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">3</text>
+<text x="990" y="754" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">127742000–127743000</text>
+<text x="1236" y="754" font-family="Arial" font-size="28" font-weight="400" text-anchor="middle" fill="#1E2933">0.655</text>
+<text x="25" y="792" font-family="Arial" font-size="28" font-weight="400" text-anchor="start" fill="#65727D">Pair ranking and the retained promoter contribution are separate outputs.</text>
 </svg>
