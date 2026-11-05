@@ -97,7 +97,7 @@ def summarize(scores,output,bootstrap=0):
     if bootstrap and 'reporter/full' in scores and np.isfinite(scores['reporter/full']).all():
         ci=[]
         for subset,ix in [('all',np.ones(len(q),bool)),('new_genes',q.novel.to_numpy())]:
-            groups=[g.index.to_numpy() for _,g in q[ix].groupby('gene',sort=True)];rng=np.random.default_rng(20261030);values=[]
+            groups=[g.index.to_numpy() for _,g in q[ix].groupby('gene',sort=True)];rng=np.random.default_rng(20261029);values=[]
             for _ in range(bootstrap):
                 ii=np.concatenate([groups[j] for j in rng.integers(len(groups),size=len(groups))]);values.append(spearmanr(q.response.iloc[ii],scores['reporter/full'][ii]).statistic)
             lo,hi=np.quantile(values,[.025,.975]);ci.append(dict(subset=subset,low=lo,high=hi,resamples=bootstrap))
